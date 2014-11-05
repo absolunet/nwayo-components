@@ -1,0 +1,8 @@
+<div class="CoveoResult">
+    <div class="coveo-title">
+        <a href="{{:clickUri}}">{{:title}}</a>
+    </div>
+    <div class="coveo-excerpt">
+        {{:~highlight(excerpt, excerptHighlights)}}
+    </div>
+</div>
