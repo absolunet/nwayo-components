@@ -1,0 +1,27 @@
+//-------------------------------------
+//-- Cover
+//-------------------------------------
+
+.cover-media {
+	position: relative;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	img, video, iframe {
+		position: absolute;
+		top: -9999px;
+		right: -9999px;
+		bottom: -9999px;
+		left: -9999px;
+		visibility: hidden;
+		max-width: none;
+		margin: auto;
+		transform: translateZ(0);
+	}
+	&.cover-active {
+		background-image: none !important;
+		img, video, iframe { visibility: visible; }
+	}
+	> img[src=""] { display: none; }
+}
